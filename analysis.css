@@ -1,0 +1,46 @@
+.analysis-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 0 0 14px; padding: 13px 15px; border: 1px solid #e4eee4; border-radius: 10px; background: #f6faf2; }
+.analysis-summary .result-label { flex-basis: 100%; }
+.summary-item { margin-right: 4px; color: var(--deep); font-size: 14px; }
+.summary-price, .analysis-summary > span:not(.result-label) { padding: 4px 8px; border-radius: 30px; color: #5c7967; background: #eaf3e5; font-size: 10px; }
+.analysis-summary .summary-price { color: var(--green); background: #e2f0d8; font-weight: 800; }
+.verdict-box .verdict-reason { color: #665e4d; font-weight: 600; }
+.verdict-box .verdict-encouragement { margin-top: 10px; color: #9a845d; font-size: 11px; }
+.budget-ratio, .eco-level { display: inline-block; margin-top: 8px; color: var(--deep); font-size: 20px; font-weight: 800; letter-spacing: -.05em; }
+.budget-card > p { margin-top: 5px !important; }
+.eco-level { padding: 3px 9px; border-radius: 30px; color: #457b58; background: #d8ebd5; font-size: 12px; }
+.eco-reason { margin-top: 10px !important; }
+.eco-card-result .eco-tip { margin-top: 10px; padding: 9px 10px; border-radius: 7px; color: #4f705a; background: rgba(255, 255, 255, .72); }
+
+/* Keep analysis copy readable and wrap Korean text at word boundaries on every screen. */
+.analysis-result { word-break: keep-all; overflow-wrap: normal; }
+.analysis-result p,
+.analysis-result li,
+.analysis-result .result-detail-card p,
+.analysis-result .judgment-basis-card p,
+.analysis-result .alternative-products-card li,
+.analysis-result .alternatives-card li { color: #405b4c; font-size: 16px; line-height: 1.8; word-break: keep-all; overflow-wrap: normal; }
+.analysis-result .result-label { font-size: 12px; line-height: 1.5; letter-spacing: .02em; }
+.analysis-result .analysis-summary > span:not(.result-label) { font-size: 13px; line-height: 1.55; }
+.analysis-result .analysis-summary .summary-item { font-size: 16px; }
+.analysis-result .purchase-need-disclaimer { font-size: 12px; line-height: 1.6; }
+.analysis-result .purchase-need-reason { color: #315b43; font-size: 16px; }
+.analysis-result .necessity-reason { color: #52695b; font-size: 16px; }
+.analysis-result .money-choices-list { color: #405b4c; font-size: 15px; line-height: 1.8; }
+.analysis-result .carbon-estimate-note { color: #52695b !important; font-size: 14px !important; line-height: 1.7; }
+.analysis-result .result-header h3 { line-height: 1.45; }
+.analysis-result .result-grid > *,
+.analysis-result .money-choices-list > *,
+.analysis-result .result-overview > * { min-width: 0; }
+
+@media (max-width: 760px) {
+  .analysis-summary { gap: 6px; padding: 12px; }
+  .summary-item { flex-basis: 100%; }
+  .verdict-box .verdict-encouragement { margin-top: 8px; }
+  .analysis-result p,
+  .analysis-result li,
+  .analysis-result .result-detail-card p,
+  .analysis-result .judgment-basis-card p,
+  .analysis-result .alternative-products-card li,
+  .analysis-result .alternatives-card li { font-size: 16px; line-height: 1.8; }
+  .analysis-result .money-choices-list { font-size: 15px; line-height: 1.8; }
+}
